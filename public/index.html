@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Cloud Service Catalog</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #10172a, #1b3157, #304b78);
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #263e63;
+            color: #a9c9ff;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #c4d2e8;
+            font-size: 16px;
+        }
+
+        .student-card {
+            background: #ffffff;
+            color: #1c2c45;
+            border-radius: 15px;
+            padding: 22px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .student-card div {
+            text-align: center;
+        }
+
+        .student-card small {
+            display: block;
+            color: #687891;
+            margin-bottom: 6px;
+        }
+
+        .student-card strong {
+            font-size: 17px;
+        }
+
+        .section-title {
+            margin: 35px 0 18px;
+            font-size: 22px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 23px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.13);
+        }
+
+        .service-card .icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 9px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #c3d2e9;
+            line-height: 1.6;
+        }
+
+        .api-section {
+            background: #ffffff;
+            color: #1b2c45;
+            margin-top: 35px;
+            border-radius: 18px;
+            padding: 28px;
+        }
+
+        .api-section p {
+            color: #65748b;
+            margin: 10px 0 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            border: none;
+            border-radius: 9px;
+            padding: 14px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .primary {
+            background: #315fcb;
+            color: white;
+        }
+
+        .secondary {
+            background: #e9efff;
+            color: #315fcb;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            color: #a9b9d2;
+            font-size: 13px;
+            margin-top: 35px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .student-card {
+                flex-direction: column;
+            }
+
+            .api-section {
+                padding: 22px;
+            }
+
+            .buttons button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="tag">CLOUD COMPUTING PROJECT</div>
+
+            <h1>Enterprise Cloud Service Catalog</h1>
+
+            <p class="subtitle">
+                Explore scalable cloud services and access real-time system information.
+            </p>
+        </header>
+
+        <section class="student-card">
+            <div>
+                <small>STUDENT NAME</small>
+                <strong>Dhwani Puthran</strong>
+            </div>
+
+            <div>
+                <small>ROLL NUMBER</small>
+                <strong>2648048</strong>
+            </div>
+
+            <div>
+                <small>TECHNOLOGY</small>
+                <strong>Node.js + Express</strong>
+            </div>
+        </section>
+
+        <h2 class="section-title">Cloud Services</h2>
+
+        <section class="services">
+
+            <div class="service-card">
+                <div class="icon">☁️</div>
+                <h3>Amazon EC2</h3>
+                <p>Virtual servers providing scalable cloud computing capacity.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">⚡</div>
+                <h3>AWS Lambda</h3>
+                <p>Serverless computing that executes code without managing servers.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🗄️</div>
+                <h3>Amazon S3</h3>
+                <p>Scalable object storage for files, backups and cloud data.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🚀</div>
+                <h3>Google Cloud Run</h3>
+                <p>Deploy and scale containerized applications in the cloud.</p>
+            </div>
+
+        </section>
+
+        <section class="api-section">
+
+            <h2>API Access</h2>
+
+            <p>
+                Explore the application endpoints and view their JSON responses.
+            </p>
+
+            <div class="buttons">
+
+                <button class="primary"
+                    onclick="window.location.href='/api/services'">
+                    View Services API →
+                </button>
+
+                <button class="secondary"
+                    onclick="window.location.href='/api/status'">
+                    System Status →
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer>
+            Cloud Catalog &nbsp;|&nbsp; Node.js &nbsp;|&nbsp; Express
+        </footer>
+
+    </div>
+
+</body>
+</html>
