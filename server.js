@@ -8,6 +8,10 @@ const PORT = process.env.PORT || 8080;
 
 // Serve static files from public folder
 app.use(express.static('public'));
+// Redirect the main homepage to index.html
+app.get('/', (req, res) => {
+    res.redirect('/index.html');
+});
 
 // API 1: Cloud Services
 app.get('/api/services', (req, res) => {
